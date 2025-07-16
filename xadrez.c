@@ -2,24 +2,32 @@
 
 int main() {
 int i;
+int movimentocavalo =1;
 
-printf("Movimento da Torre:\n");
-for ( i = 1; i <= 5; i++){
-    printf(" Torre %d: casas a direita \n",i );
-}
+    printf("Movimento da Torre:\n");
+        for ( i = 1; i <= 5; i++){
+            printf(" Torre %d: casas a direita \n",i );}
    
-    printf("\n Movimento de Bispo:\n;");
-    i=1;
-while (i <= 5){
-    printf("Bispo %d:casas para cima,direita  \n",i);
-    i++;
-}
-    printf(" \nMovimento da Rinha:\n");
-    i =1 ;
-    do{
+                    printf("\n Movimento de Bispo:\n;");
+                    i=1;
+                  while (i <= 5){
+                printf("Bispo %d:casas para cima,direita  \n",i);
+                i++;}
+            printf(" \nMovimento da Rinha:\n");
+            i =1 ;
+          do{
         printf("Rainha %d:casas para a esquerda \n",i);
         i++;
     } while (i<=8);
+
+
+     printf("\nMovimento do cavalo:\n");
+        while (movimentocavalo --) {
+            for (int i = 1; i <= 2; i++){
+             printf("para cima\n");
+            }
+        printf("para direita\n");
+    }
     
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
